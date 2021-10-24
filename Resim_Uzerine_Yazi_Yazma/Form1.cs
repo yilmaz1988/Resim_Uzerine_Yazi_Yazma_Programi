@@ -43,22 +43,19 @@ namespace Resim_Uzerine_Yazi_Yazma
 
                 MessageBox.Show("Tüm alanlar dolu olmalıdır..");
             }
-           
+
         }
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            if (DialogResult==DialogResult.OK)
-            {
-                saveFileDialog1.Filter = "Resim |.jpeg";
-                saveFileDialog1.ShowDialog();
-                bmp.Save(saveFileDialog1.FileName);
-            }
-            else
-            {
-                MessageBox.Show("Lütfen tüm alanları doldurun...");
-            }
-           
+
+          
+                    saveFileDialog1.Filter = "Resim |.jpeg";
+                    saveFileDialog1.ShowDialog();
+                    bmp.Save(saveFileDialog1.FileName);
+             
         }
+
     }
 }
+
