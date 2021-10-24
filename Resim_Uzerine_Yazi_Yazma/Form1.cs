@@ -49,7 +49,6 @@ namespace Resim_Uzerine_Yazi_Yazma
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
 
-          
                     saveFileDialog1.Filter = "Resim |.jpeg";
                     saveFileDialog1.ShowDialog();
                     bmp.Save(saveFileDialog1.FileName);
